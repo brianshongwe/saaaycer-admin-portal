@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import axios from 'axios'
+import './login.css'
 
 const Register = () => {
     const [values, setValues] = useState({
@@ -25,8 +26,8 @@ const Register = () => {
         }
     }
   return (
-    <div className='flex justify-center items-center h-screen'>
-        <div className='shadow-lg px-8 py-5 border w-72'>
+    <div className='form-container'>
+        
             <h2 className='text-lg font-bold mb-4'>Register</h2>
             <form onSubmit={handleSumbit}>
                 <div className="mb-4">
@@ -50,7 +51,7 @@ const Register = () => {
                 <span>Already have account?</span>
                 <Link to='/login' className='text-blue-500'>Login</Link>
             </div>
-        </div>
+       
     </div>
   )
 }
