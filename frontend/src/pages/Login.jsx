@@ -30,12 +30,12 @@ const Login = () => {
         
             <h2 className='text-lg font-bold mb-4 text-center'>Login</h2>
             <form onSubmit={handleSumbit}>
-                <div className="mb-4 text-center">
+                <div className="mb-4">
                     <label htmlFor="email">Email</label>
                     <input type="email" placeholder='Enter Email'
                     name="email" onChange={handleChanges}/>
                 </div>
-                <div className="mb-4 text-center">
+                <div className="mb-4">
                     <label htmlFor="password" className='block text-gray-700'>Password</label>
                     <input type="password" placeholder='Enter Password'
                     name="password" onChange={handleChanges}/>
